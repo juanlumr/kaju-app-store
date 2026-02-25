@@ -12,6 +12,7 @@ services:
     image: ghcr.io/zeroclaw-labs/zeroclaw:v0.1.7
     restart: on-failure
     stop_grace_period: 1m
+    user: "0:0"
     environment:
       HOME: /zeroclaw-data
       ZEROCLAW_WORKSPACE: /zeroclaw-data/workspace
