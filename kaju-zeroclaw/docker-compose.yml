@@ -6,36 +6,13 @@ services:
     environment:
       APP_HOST: kaju-zeroclaw_zeroclaw_1
       APP_PORT: 42617
-      # Umbrel auth sits in front; ZeroClaw also has its own 6-digit pairing.
-      # Remove this line to require Umbrel login too (double auth).
       PROXY_AUTH_ADD: "false"
-
-  init-config:
-    image: alpine:3.20
-    restart: "no"
-    user: "1000:1000"
-    command: >
-      sh -c '
-        mkdir -p /data/.zeroclaw /data/workspace &&
-        if [ ! -f /data/.zeroclaw/config.toml ]; then
-          cp /defaults/config.toml /data/.zeroclaw/config.toml;
-          echo "Config initialized from template";
-        else
-          echo "Config already exists, skipping";
-        fi
-      '
-    volumes:
-      - ${APP_DATA_DIR}/data:/data
-      - ./config:/defaults:ro
 
   zeroclaw:
     image: ghcr.io/zeroclaw-labs/zeroclaw:v0.1.7
-    restart: unless-stopped
+    restart: on-failure
     stop_grace_period: 1m
     user: "1000:1000"
-    depends_on:
-      init-config:
-        condition: service_completed_successfully
     environment:
       HOME: /zeroclaw-data
       ZEROCLAW_WORKSPACE: /zeroclaw-data/workspace
