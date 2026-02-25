@@ -1,0 +1,40 @@
+manifestVersion: 1.1
+id: kaju-zeroclaw
+name: ZeroClaw
+tagline: Personal AI assistant — autonomous, lightweight, secure
+icon: https://raw.githubusercontent.com/zeroclaw-labs/zeroclaw/main/zeroclaw.png
+category: ai
+version: "0.1.7"
+port: 42617
+description: >-
+  ZeroClaw is a fast, small, and fully autonomous AI assistant infrastructure
+  built in Rust. Less than 5MB RAM, sub-10ms cold starts, ~8.8MB binary.
+
+
+  Supports 28+ LLM providers (OpenRouter, Anthropic, OpenAI, Ollama, etc.)
+  and 15+ channels (Telegram, Discord, Slack, WhatsApp, Matrix, and more).
+
+
+  Includes a built-in web dashboard for configuration, agent chat, memory
+  management, cron jobs, integrations, cost tracking, logs, and diagnostics.
+
+
+  After installing, open the app to access the dashboard. Pair with the
+  6-digit code shown in the logs, then configure your API key, Telegram bot,
+  and other integrations from the web UI.
+
+developer: ZeroClaw Labs
+website: https://zeroclawlabs.ai
+submitter: Juan Luis
+submission: https://github.com/juanlumr/kaju-app-store
+repo: https://github.com/zeroclaw-labs/zeroclaw
+support: https://github.com/zeroclaw-labs/zeroclaw/issues
+gallery: []
+releaseNotes: >-
+  Initial Umbrel package for ZeroClaw v0.1.7. Includes embedded web dashboard,
+  prompt injection defense, and multi-architecture support (amd64/arm64).
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torOnly: false
