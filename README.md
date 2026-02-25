@@ -1,17 +1,31 @@
-## Umbrel Community App Store Template
+# KAJU App Store for Umbrel
 
-This repository is a template to create an Umbrel Community App Store. These additional app stores allow developers to distribute applications without submitting to the [Official Umbrel App Store](https://github.com/getumbrel/umbrel-apps).
+A community app store for [umbrelOS](https://umbrel.com) featuring curated apps.
 
-## How to use:
+## Apps
 
-1. Start by clicking the "Use this template" button located above.
-2. Assign an ID and name to your app store within the `umbrel-app-store.yml` file. This file specifies two important attributes:
-    - `id` - Acts as a unique prefix for every app within your Community App Store. You must start your application's ID with your app store's ID. For instance, in this template, the app store ID is `sparkles`, and there's an app named `hello world`. Consequently, the app's ID should be: `sparkles-hello-world`.
-    - `name` - This is the name of the Community App Store displayed in the umbrelOS UI.
-3. Change the name of the `sparkles-hello-world` folder to match your app's ID. The app ID is for you to decide. For example, if your app store ID is `whistles`, and your app is named My Video Downloader, you could set its app ID to `whistles-my-video-downloader`, and rename the folder accordingly.
-4. Next, enter your app's listing details in the `whistles-my-video-downloader/umbrel-app.yml`. These are displayed in the umbrelOS UI.
-5. Include the necessary Docker services in `whistles-my-video-downloader/docker-compose.yml`.
-6. That's it! Your Community App Store, featuring your unique app, is now set up and ready to go. To use your Community App Store, you can add its GitHub url the umbrelOS user interface as shown in the following demo:
+### ZeroClaw
 
+Personal AI assistant infrastructure built in Rust. Autonomous, lightweight (<5MB RAM), and secure.
 
-https://user-images.githubusercontent.com/10330103/197889452-e5cd7e96-3233-4a09-b475-94b754adc7a3.mp4
+- **Website:** <https://zeroclawlabs.ai>
+- **GitHub:** <https://github.com/zeroclaw-labs/zeroclaw>
+
+## How to install
+
+1. Open the **App Store** in your umbrelOS dashboard.
+2. Click the **three-dot menu** (top-right corner).
+3. Select **"Community App Stores"**.
+4. Paste this repository URL: `https://github.com/juanlumr/kaju-app-store`
+5. Click **Add**.
+
+The KAJU App Store will appear alongside the official Umbrel apps.
+
+## After installing ZeroClaw
+
+1. Open the app from Umbrel — you'll see the ZeroClaw web dashboard.
+2. Check the app logs in Umbrel to find the **6-digit pairing code**.
+3. Enter the code in the dashboard to authenticate.
+4. Go to **Configuration** and set your API key (OpenRouter recommended).
+5. Set up your channels (Telegram, Discord, etc.) from the **Integrations** page.
+6. Everything is configurable from the dashboard — no SSH needed.
