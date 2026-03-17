@@ -4,7 +4,7 @@ name: ZeroClaw
 tagline: Personal AI assistant — autonomous, lightweight, secure
 icon: https://raw.githubusercontent.com/zeroclaw-labs/zeroclaw/main/zeroclaw.png
 category: automation
-version: "0.1.7"
+version: "0.4.3"
 port: 42617
 description: >-
   ZeroClaw is a fast, small, and fully autonomous AI assistant infrastructure
@@ -31,8 +31,9 @@ repo: https://github.com/zeroclaw-labs/zeroclaw
 support: https://github.com/zeroclaw-labs/zeroclaw/issues
 gallery: []
 releaseNotes: >-
-  Initial Umbrel package for ZeroClaw v0.1.7. Includes embedded web dashboard,
-  prompt injection defense, and multi-architecture support (amd64/arm64).
+  Update to ZeroClaw v0.4.3. Adds X/Twitter channel, browser delegation tool,
+  WhatsApp voice transcription, SQLite sessions with FTS5, two-tier response cache,
+  Merkle hash-chain audit trail, and health metrics with adaptive heartbeat.
 dependencies: []
 path: ""
 defaultUsername: ""
