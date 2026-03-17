@@ -2,7 +2,7 @@ manifestVersion: 1.1
 id: kaju-zeroclaw
 name: ZeroClaw
 tagline: Personal AI assistant — autonomous, lightweight, secure
-icon: https://raw.githubusercontent.com/zeroclaw-labs/zeroclaw/main/zeroclaw.png
+icon: https://raw.githubusercontent.com/zeroclaw-labs/zeroclaw/master/docs/assets/zeroclaw.png
 category: automation
 version: "0.4.3"
 port: 42617
