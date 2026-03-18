@@ -20,6 +20,7 @@ services:
       ZEROCLAW_GATEWAY_PORT: "42617"
       RUST_LOG: info
       GROQ_API_KEY: "${GROQ_API_KEY:-}"
+      ANTHROPIC_API_KEY: "${ANTHROPIC_API_KEY:-}"
     volumes:
       - ${APP_DATA_DIR}/data:/zeroclaw-data
-    command: ["gateway", "start", "--host", "0.0.0.0", "--port", "42617"]
+    command: ["daemon"]
