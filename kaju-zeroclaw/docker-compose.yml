@@ -9,7 +9,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   zeroclaw:
-    image: ghcr.io/zeroclaw-labs/zeroclaw:v0.5.5
+    image: ghcr.io/zeroclaw-labs/zeroclaw:v0.5.4
     restart: on-failure
     stop_grace_period: 1m
     user: "0:0"
