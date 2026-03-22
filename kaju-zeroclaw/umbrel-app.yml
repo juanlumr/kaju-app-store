@@ -4,7 +4,7 @@ name: ZeroClaw
 tagline: Personal AI assistant — autonomous, lightweight, secure
 icon: https://raw.githubusercontent.com/zeroclaw-labs/zeroclaw/master/docs/assets/zeroclaw.png
 category: automation
-version: "0.5.5.1"
+version: "0.5.7"
 port: 42617
 description: >-
   ZeroClaw is a fast, small, and fully autonomous AI assistant infrastructure
@@ -31,7 +31,9 @@ repo: https://github.com/zeroclaw-labs/zeroclaw
 support: https://github.com/zeroclaw-labs/zeroclaw/issues
 gallery: []
 releaseNotes: >-
-  Rollback to ZeroClaw v0.5.4 due to broken v0.5.5 ARM64 image.
+  Update to ZeroClaw v0.5.7. Adds emoji reaction tool, session messaging tools,
+  image generation via fal.ai, layered memory architecture, and heartbeat
+  session context injection.
 dependencies: []
 path: ""
 defaultUsername: ""
