@@ -4,7 +4,7 @@ name: ZeroClaw
 tagline: Personal AI assistant — autonomous, lightweight, secure
 icon: https://raw.githubusercontent.com/zeroclaw-labs/zeroclaw/master/docs/assets/zeroclaw.png
 category: automation
-version: "0.7.5"
+version: "0.7.5+1"
 port: 42617
 description: >-
   ZeroClaw is a fast, small, and fully autonomous AI assistant infrastructure
@@ -31,11 +31,15 @@ repo: https://github.com/zeroclaw-labs/zeroclaw
 support: https://github.com/zeroclaw-labs/zeroclaw/issues
 gallery: []
 releaseNotes: >-
-  Update to ZeroClaw v0.7.4. Restores the web dashboard in the official
-  Docker image (missing from v0.7.3). Also includes a clean-room Matrix
-  rewrite, Mozilla Fluent i18n pipeline with multi-locale docs, schema-
-  driven onboarding rewrite, new session-management tools and gateway
-  abort endpoint, and the recovered WeChat iLink Bot channel.
+  Update to ZeroClaw v0.7.5. Adds in-browser onboarding via a new
+  /onboard flow, schema-driven per-property config CRUD with an
+  OpenAPI 3.1 spec, live drift detection for hand-edited config.toml,
+  and a three-surface personality editor (CLI / TUI / web) for the
+  seven runtime markdown files. ACP gains session cancellation and a
+  tool-approval back-channel, per-provider pricing makes cost tracking
+  accurate, and the web dashboard learns hot model switching and a
+  real stop button. Installer overhaul with presets and a TTY feature
+  picker; MUSL Linux static binaries are back.
 dependencies: []
 path: ""
 defaultUsername: ""
