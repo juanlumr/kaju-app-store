@@ -4,7 +4,7 @@ name: ZeroClaw
 tagline: Personal AI assistant — autonomous, lightweight, secure
 icon: https://raw.githubusercontent.com/zeroclaw-labs/zeroclaw/master/docs/assets/zeroclaw.png
 category: automation
-version: "0.7.5+1"
+version: "0.8.2"
 port: 42617
 description: >-
   ZeroClaw is a fast, small, and fully autonomous AI assistant infrastructure
@@ -31,15 +31,16 @@ repo: https://github.com/zeroclaw-labs/zeroclaw
 support: https://github.com/zeroclaw-labs/zeroclaw/issues
 gallery: []
 releaseNotes: >-
-  Update to ZeroClaw v0.7.5. Adds in-browser onboarding via a new
-  /onboard flow, schema-driven per-property config CRUD with an
-  OpenAPI 3.1 spec, live drift detection for hand-edited config.toml,
-  and a three-surface personality editor (CLI / TUI / web) for the
-  seven runtime markdown files. ACP gains session cancellation and a
-  tool-approval back-channel, per-provider pricing makes cost tracking
-  accurate, and the web dashboard learns hot model switching and a
-  real stop button. Installer overhaul with presets and a TTY feature
-  picker; MUSL Linux static binaries are back.
+  Update to ZeroClaw v0.8.2. Opens two new front doors: A2A agent
+  discovery over the gateway for agent-to-agent interop, and a richer
+  skills story with user-configured extra registries and typed
+  slash-command options. Untrusted inbound content is now framed and
+  sanitized before a model sees it via a universal ingress policy
+  layer, and a durable SQLite run/task control plane backs SOP
+  run-state, live metrics, and subagent supervision. Plugins gain an
+  SSRF guard and per-alias config scoping, Discord adds interaction
+  components (buttons, selects, modals), and secrets like the Telegram
+  bot token are redacted through the canonical global leak detector.
 dependencies: []
 path: ""
 defaultUsername: ""
